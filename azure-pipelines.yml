@@ -74,8 +74,8 @@ stages:
                 $(imagePullSecret)
               containers: |
                 $(containerRegistry)/$(imageRepository):$(tag)
-              strategy: 'canary'
-              percentage: '10'
+              #strategy: 'canary'
+              # percentage: '10'
 
 
 
