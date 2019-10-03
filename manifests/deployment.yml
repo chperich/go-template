@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: chperichgotemplate 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: chperichgotemplate 
+    spec:
+      containers:
+        - name: chperichgotemplate 
+          image: jikuma.azurecr.io/chperichgotemplate 
+          ports:
+          - containerPort: 80
